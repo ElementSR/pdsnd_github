@@ -16,3 +16,11 @@ washington.csv
 new_york_city.csv
 
 ### Credits
+Used documentation on the following websites to look up arguments and understand how functions worked using examples:
+- https://www.python.org/
+- https://www.w3schools.com/python/default.asp
+- https://pandas.pydata.org/docs/
+
+I used the calendar module from these solutions to parse datetime ints and convert between abbreviations
+- https://stackoverflow.com/questions/40076887/convert-python-abbreviated-month-name-to-full-name
+- https://stackoverflow.com/questions/36341484/get-day-name-from-weekday-int
