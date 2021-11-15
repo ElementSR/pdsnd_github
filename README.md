@@ -11,9 +11,9 @@ It will then display various calculations based on the filtered data and provide
 Finally, it will give the option to restart the process or terminate.
 
 ### Files used
-chicago.csv
-washington.csv
-new_york_city.csv
+- chicago.csv
+- washington.csv
+- new_york_city.csv
 
 ### Credits
 Used documentation on the following websites to look up arguments and understand how functions worked using examples:
