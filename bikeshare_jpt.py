@@ -1,6 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+"""
+This is a data anaylsis program for US Bikeshare data.
+
+This program will take input csv data files and output various calculations.
+It will ask the user for various inputs to filter the data and give the option
+to display raw data upon request.
+"""
+
 # %load bikeshare.py
 import time
 from datetime import date
