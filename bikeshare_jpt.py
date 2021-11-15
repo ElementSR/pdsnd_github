@@ -1,16 +1,23 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+"""
+This is a data anaylsis program for US Bikeshare data.
+
+This program will take input csv data files and output various calculations.
+It will ask the user for various inputs to filter the data and give the option
+to display raw data upon request.
+"""
+
 # %load bikeshare.py
 import time
-from datetime import date
-import pandas as pd
-import numpy as np
 import calendar
+import pandas as pd
 
-CITY_DATA = { 'chicago': 'chicago.csv',
-              'new york city': 'new_york_city.csv',
-              'washington': 'washington.csv' }
+
+CITY_DATA = {'chicago': 'chicago.csv',
+             'new york city': 'new_york_city.csv',
+             'washington': 'washington.csv'}
 
 
 def get_filters():
@@ -39,7 +46,6 @@ def get_filters():
 
 
     #get user input for month (all, january, february, ... , june)
-    #used calendar module from https://stackoverflow.com/questions/40076887/convert-python-abbreviated-month-name-to-full-name
     month = ""
     month_abbr_dict = dict(zip(calendar.month_abbr[1:], calendar.month_name[1:]))
     while True:
@@ -79,8 +85,7 @@ def get_filters():
                 elif day == 'all':
                     print("You chose: all days")
                     break
-            except Exception as e:
-                #print(e)
+            except:
                 print(day + " is an invalid input! Please enter a day of the week, or choose 'all'\n")
 
             print(day + " is an invalid input! Please enter a day of the week, or choose 'all'\n")
@@ -92,7 +97,7 @@ def get_filters():
 
 def load_data(city, month, day):
     """
-    Loads data for the specified city and filters by month and day if applicable.
+    Load data for the specified city and filters by month and day if applicable.
 
     Args:
         (str) city - name of the city to analyze
